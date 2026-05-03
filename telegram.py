@@ -17,6 +17,7 @@ notelp = os.getenv("notelp")
 api_id = int(tapiid)
 part1 = os.getenv("SESSION_B64_1", "")
 part2 = os.getenv("SESSION_B64_2", "")
+session_b64 = part1 + part2
 if session_b64:
     import base64
     with open("userbot.session", "wb") as f:
