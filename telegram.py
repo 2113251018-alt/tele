@@ -15,7 +15,8 @@ tapiid = os.getenv("tapiid")
 Thash = os.getenv("Thash")
 notelp = os.getenv("notelp")
 api_id = int(tapiid)
-session_b64 = os.getenv("SESSION_BASE64")
+part1 = os.getenv("SESSION_B64_1", "")
+part2 = os.getenv("SESSION_B64_2", "")
 if session_b64:
     import base64
     with open("userbot.session", "wb") as f:
